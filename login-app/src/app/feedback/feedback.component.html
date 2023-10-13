@@ -1,0 +1,30 @@
+<div class="feedback-container">
+  <h2>Feedback Form</h2>
+
+  <form (ngSubmit)="onSubmit()" #feedbackForm="ngForm">
+    <div class="form-group">
+      <label for="rating">Rating:</label>
+      <input type="number" id="rating" name="rating" [(ngModel)]="model.rating" required>
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" [(ngModel)]="model.comment" required></textarea>
+    </div>
+
+    <button type="submit" [disabled]="!feedbackForm.form.valid">Submit</button>
+  </form>
+</div>
+
+<button type="button" (click)="getfeedback()">Get Feedback</button>
+
+<h2>Feedback List</h2>
+<ul *ngIf="feedbackData && feedbackData.length">
+  <li *ngFor="let feedback of feedbackData">
+    <div class="feedback-item">
+      <p><strong>Rating:</strong> {{ feedback.rating }}</p>
+      <p><strong>Comment:</strong> {{ feedback.comment }}</p>
+      <p><strong>Date:</strong> {{ feedback.date | date }}</p>
+    </div>
+  </li>
+</ul>

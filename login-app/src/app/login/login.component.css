@@ -1,0 +1,62 @@
+/* Styling the entire login container */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Styling the login form */
+  .login-container form {
+    margin-top: 20px;
+  }
+  
+  /* Styling the login form title */
+  .login-container h2 {
+    color: #333;
+  }
+  
+  /* Styling form labels */
+  .form-group label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  /* Styling input fields */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Styling the login button */
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the login button */
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for error messages (if needed) */
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  

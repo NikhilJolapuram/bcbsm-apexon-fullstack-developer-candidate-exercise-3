@@ -1,0 +1,10 @@
+<!-- admin-feedback.component.html -->
+<div *ngIf="feedbackList.length">
+    <h2>Feedback</h2>
+    <div *ngFor="let feedback of feedbackList">
+      <p>{{feedback.message}}</p>
+      <p><strong>User:</strong> {{feedback.user}}</p>
+      <hr>
+    </div>
+  </div>
+  
